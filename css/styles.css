@@ -97,9 +97,8 @@ address a {
 }
 address svg {
     float: left;
-    width: 20px;
-    height: 20px;
-    padding: 1px;
+    width: 25px;
+    height: 25px;
     margin: 3px 10px 0 0;
 }
 div h1:first-of-type {
@@ -112,9 +111,6 @@ div h1:first-of-type {
     text-transform:     lowercase;
     padding:            0 60px;
     opacity:            0.2;
-}
-.flair {
-    /*display:    none;*/
 }
 header {
     box-shadow: 0 40px 50px -50px black, 40px 0 50px -50px #aaa, -40px 0 50px -50px #aaa;
@@ -137,9 +133,24 @@ nav li {
 }
 .flair {
     position: absolute;
+    width: 100px;
+    height: 100px;
     top: 0;
-    left: 30px;
+    left: 103px;
     height: 80%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    -moz-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    opacity: 0.3;
+}
+.flair.text {
+    line-height: 100px;
+    font-size: 100px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.2;
+    -khtml-opacity: 0.2;
     opacity: 0.2;
 }
 nav a {
@@ -151,18 +162,46 @@ nav a {
     text-transform:  lowercase;
     text-align:      center;
 }
+footer h2 {
+    font-size: 25px;
+    font-weight: 300;
+    color: #aaa;
+    margin: 15px 0;
+    text-align: center;
+}
 footer ul {
     padding: 0;
+    margin: 0;
     overflow: hidden;
 }
 footer li {
+    border-left: 1px solid #ccc;
     list-style: none;
     margin: 0;
     float: left;
-    padding: 30px;
+    margin: 45px 0;
+    padding: 0 30px;
+    width: 33%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+footer li:first-child {
+    border-left: none;
 }
 footer svg {
     width: 64px;
     height: 64px;
     vertical-align: middle;
+}
+footer svg.sub {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+footer a, footer a:visited {
+    text-decoration: none;
+    color: #061803;
+}
+a:hover, footer a:hover {
+    color: #888;
 }
