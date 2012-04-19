@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <g transform="translate(-291.5,-568.79075)">
+    <g transform="matrix(0.29673591,0,0,0.29673591,291.5,570.11029)" id="g3005" style="overflow:visible">
+	<linearGradient
+   x1="8"
+   y1="191.6895"
+   x2="269.58981"
+   y2="191.6895"
+   id="XMLID_4_"
+   gradientUnits="userSpaceOnUse">
+		<stop
+   id="stop1310"
+   style="stop-color:#6ba140;stop-opacity:1"
+   offset="0" />
+
+		<stop
+   id="stop1312"
+   style="stop-color:#77ae40;stop-opacity:1"
+   offset="1" />
+
+	</linearGradient>
+
+	<path
+   d="M 8,113.71 C 8,83.52 30.04,61.38 60.11,61.38 h 157.37 c 30.069,0 52.109,22.14 52.109,52.33 v 155.96 c 0,30.189 -22.04,52.33 -52.109,52.33 H 60.11 C 30.04,322 8,299.859 8,269.67 V 113.71 z"
+   id="path1314"
+   style="fill:url(#XMLID_4_);stroke:#ffffff;stroke-width:16" />
+	<linearGradient
+   x1="293.92291"
+   y1="218.3428"
+   x2="108.7389"
+   y2="33.158798"
+   id="XMLID_5_"
+   gradientUnits="userSpaceOnUse">
+   <stop
+   id="stop1319"
+   style="stop-color:#78b143;stop-opacity:1"
+   offset="0" />
+   <stop
+   id="stop1321"
+   style="stop-color:#92c73c;stop-opacity:1"
+   offset="1" />
+   </linearGradient>
+
+	<path d="m 96.59,63.43 c 0,-24.13 17.65,-41.82 41.73,-41.82 h 126.02 c 24.08,0 41.73,17.69 41.73,41.82 v 124.64 c 0,24.13 -17.65,41.82 -41.73,41.82 H 138.32 c -24.08,0 -41.73,-17.69 -41.73,-41.82 V 63.43 z" style="fill:url(#XMLID_5_);stroke:#ffffff;stroke-width:16" />
+<linearGradient x1="320.57419" y1="141.6143" x2="194.64639" y2="15.6864" id="XMLID_6_" gradientUnits="userSpaceOnUse">
+    <stop id="stop1330" style="stop-color:#94c63a;stop-opacity:1" offset="0" />
+    <stop style="stop-color:#bcd531;stop-opacity:1" offset="1" />
+</linearGradient>
+
+<path d="M 186.221,36.37 C 186.221,20 198.25,8 214.66,8 h 85.9 C 316.971,8 329,20 329,36.37 v 84.56 c 0,16.37 -12.029,28.37 -28.439,28.37 h -85.9 c -16.41,0 -28.439,-12 -28.439,-28.37 V 36.37 z" style="fill:url(#XMLID_6_);stroke:#ffffff;stroke-width:16" />
+</g>
+</g>
+</svg>
