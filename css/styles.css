@@ -182,6 +182,7 @@ footer li {
     margin: 45px 0;
     padding: 0 30px;
     width: 33%;
+    min-width: 300px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
