@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('Thin-webfont.eot');
+    src: url('Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Thin-webfont.woff') format('woff'),
+         url('Thin-webfont.ttf') format('truetype'),
+         url('Thin-webfont.svg#ComfortaaThin') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('Regular-webfont.eot');
+    src: url('Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Regular-webfont.woff') format('woff'),
+         url('Regular-webfont.ttf') format('truetype'),
+         url('Regular-webfont.svg#ComfortaaRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('Bold-webfont.eot');
+    src: url('Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Bold-webfont.woff') format('woff'),
+         url('Bold-webfont.ttf') format('truetype'),
+         url('Bold-webfont.svg#ComfortaaBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
