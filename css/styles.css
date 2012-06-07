@@ -1,17 +1,10 @@
 html {
-    font-family:        'Open Sans';
+    font-family:        'Open Sans', sans-serif;
     color:              #061803;
 }
 h1, h2 {
     font-weight:        300;
     font-size:          50px;
-}
-hgroup {
-    padding:            0;
-    margin:             0;
-    width:              50%;
-    float:              left;
-    min-width:          300px;
 }
 body:before
 {
@@ -50,6 +43,13 @@ header {
     color:              #aaa;
     text-transform:     lowercase;
 }
+header>* {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    min-width: 300px;
+}
 header a {
     color:              #fff;
 }
@@ -62,7 +62,7 @@ header:after, .profiles:after {
 header, .profiles, footer {
     position:           relative;
     padding:            25px;
-    max-width:          930px;
+    max-width:          900px;
     margin:             0 auto;
 }
 .profiles, footer {
@@ -72,14 +72,10 @@ header h2 {
     font-weight:        300;
     font-size:          100px;
     text-align:         right;
-    padding:            0 60px;
+    padding:            0 60px 0 0;
     margin:             0;
 }
 address {
-    float: right;
-    box-sizing:         border-box;
-    width:              50%;
-    min-width:          330px;
     font-style:         normal;
 }
 address ul {
@@ -92,8 +88,25 @@ address li {
     font-size:          20px;
 }
 address a {
+    display: inline-block;
     text-decoration:    none;
     color:              #fff;
+}
+@media (max-width: 708px) {
+    header>* {
+        float: none;
+        margin: 0 auto;
+        min-width: 250px;
+    }
+    address li {
+        font-size: 16px;
+    }
+    address a {
+        padding-top: 3px;
+    }
+    header h2 {
+        padding: 0;
+    }
 }
 address svg {
     float: left;
@@ -101,7 +114,7 @@ address svg {
     height: 25px;
     margin: 3px 10px 0 0;
 }
-div h1:first-of-type {
+.pull {
     position:           absolute;
     left:               0;
     top:                30px;
@@ -112,32 +125,53 @@ div h1:first-of-type {
     padding:            0 60px;
     opacity:            0.2;
 }
+footer .pull {
+    top: -5px;
+    font-size: 40px;
+}
+@media (max-width: 1400px) {
+    .pull {
+       margin-left: -575px; 
+    }
+    .profiles .pull {
+        top: 45px;
+        font-size: 40px;
+    }
+}
+@media (max-width: 1250px) {
+    .pull {display: none;}
+}
 header {
     box-shadow: 0 40px 50px -50px black, 40px 0 50px -50px #aaa, -40px 0 50px -50px #aaa;
 }
 nav ul {
     overflow: hidden;
-    float: left;
     width: auto;
     padding: 30px 0;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 900px;
 }
 nav li {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
     list-style: none;
     padding: 0;
-    width: 250px;
-    height: 90px;
-    padding: 30px;
+    width: 300px;
+    height: 150px;
+    padding: 25px;
     float: left;
     position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 .flair {
     position: absolute;
     width: 100px;
-    height: 100px;
+    height: 90px;
     top: 0;
-    left: 103px;
+    left: 100px;
     height: 80%;
+    z-index: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
     filter: alpha(opacity=30);
     -moz-opacity: 0.3;
@@ -153,14 +187,33 @@ nav li {
     -khtml-opacity: 0.2;
     opacity: 0.2;
 }
+@media (max-width: 950px) {
+    nav ul {
+        max-width: 600px;
+    }
+}
+@media (max-width: 650px) {
+    nav ul {
+        max-width: 250px;
+    }
+    nav li {
+        padding: 30px 0;
+        width: 250px;
+    }
+    .flair {
+        left: 75px;
+    }
+}
 nav a {
     font-weight:     300;
     display:         block;
     text-decoration: none;
     color:           inherit;
     font-size:       40px;
-    text-transform:  lowercase;
     text-align:      center;
+}
+footer {
+    padding: 0 25px;
 }
 footer h2 {
     font-size: 25px;
@@ -171,7 +224,7 @@ footer h2 {
 }
 footer ul {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     overflow: hidden;
 }
 footer li {
@@ -179,8 +232,8 @@ footer li {
     list-style: none;
     margin: 0;
     float: left;
-    margin: 45px 0;
-    padding: 0 30px;
+    margin: 20px 0;
+    padding: 0 25px;
     width: 33%;
     min-width: 300px;
     -moz-box-sizing: border-box;
@@ -188,6 +241,22 @@ footer li {
 }
 footer li:first-child {
     border-left: none;
+}
+@media (max-width: 950px) {
+    footer ul {
+        max-width: 250px;
+    }
+    footer li {
+        float: none;
+        border-left: none;
+        border-top: 1px solid #ccc;
+        margin: 0;
+        padding: 20px 0;
+        min-width: 250px;
+    }
+    footer li:first-child {
+        border-top: none;
+    }
 }
 footer svg {
     width: 64px;
@@ -200,9 +269,21 @@ footer svg.sub {
     margin-right: 10px;
 }
 footer a, footer a:visited {
+    position: relative;
+    z-index: 1;
     text-decoration: none;
     color: #061803;
 }
 a:hover, footer a:hover {
     color: #888;
+}
+.alternateLinks {
+    padding: 0 20px;
+}
+.alternateLinks a {
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
 }
