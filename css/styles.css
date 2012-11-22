@@ -108,11 +108,14 @@ address a {
         padding: 0;
     }
 }
-address svg {
+address svg, address .image {
     float: left;
     width: 25px;
     height: 25px;
     margin: 3px 10px 0 0;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
 }
 .pull {
     position:           absolute;
